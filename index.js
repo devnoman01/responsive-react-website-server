@@ -109,6 +109,10 @@ app.get("/", (req, res) => {
   res.send("Running resposive react site server");
 });
 
+app.get("/hero", (req, res) => {
+  res.send("Developer meets Heroku");
+});
+
 app.listen(port, () => {
   console.log("Listening to port", port);
 });
